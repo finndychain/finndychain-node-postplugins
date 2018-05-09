@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+    <head>
+    <template source='TPL:admin.common.head' />
+    <script src="{@G:url.extres}/finndy/test.js?v{@G:c.version}"></script>
+</head>
+<body>
+    <div class="wrap J_check_wrap">
+        <style>
+            .web-address {
+                font-weight: 600;
+            }
+        </style>
+        <form class="J_ajaxForm" data-role="list" action="{@url:app/finndy/manage/doRun}" method="post">
+            <div class="h_a">插件说明及设置</div>
+            <div class="table_full">
+                <table width="100%">
+                    <col class="th" />
+                    <col width="400" />
+                    <col />
+                   
+                    
+                    <tr>
+                        <td class="tipsblock" colspan="3">
+                            <div>您的网站访问地址为： <span class='web-address'>{$conf['basicWebAddress']}</span></div>
+                        </td>
+                    </tr>
+                  
+                    <tr>
+                        <th class="partition h_a" colspan="3"><h5>发布设置</h5></th>
+                    </tr>
+                    <tr>
+                        <th>发布密码</th>
+                        <td>
+                            <input type="text" name="conf[token]" class="input length_3" value="{$conf['token']}">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="btn_wrap">
+                <div class="btn_wrap_pd">
+                    <button class="btn btn_submit J_ajax_submit_btn" type="submit">提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+<template source='TPL:admin.common.footer' />
+</body>
+</html>

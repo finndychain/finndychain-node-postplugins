@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+	<application>
+		<name>发源地数据接口</name>
+		<alias>finndy</alias>
+		<version>1.0</version>
+		<pw-version>9.0</pw-version>
+		<type>app</type>
+		<description>发源地数据发布接口
+		</description>
+		<charset>utf-8</charset>
+		<logo>images/finndy_icon.png</logo>
+		<website>http://www.finndy.com</website>
+		<author-name>finndy</author-name>
+		<author-email>server@finndy.com</author-email>
+		<author-icon>http://www.finndy.com
+		</author-icon>
+	</application>
+	<res>resource</res>
+	<inject-services>
+		<s_app>
+			<finndy>
+				<class>EXT:finndy.service.srv.Finndy_AppDo</class>
+				<loadway>load</loadway>
+				<method>finndy</method>
+				<description>this is another app</description>
+			</finndy>
+		</s_app>
+		<s_admin_menu>
+			<finndy>
+				<class>EXT:finndy.service.srv.Finndy_Admin_MenuDo</class>
+				<loadway>load</loadway>
+				<method>finndy</method>
+				<description>this is another Finndy_admin_menu</description>
+			</finndy>
+		</s_admin_menu>
+	</inject-services>
+</manifest>

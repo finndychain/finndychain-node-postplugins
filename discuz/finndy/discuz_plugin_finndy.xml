@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.2]]></item>
+	<item id="Time"><![CDATA[2016-07-29 16:14]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost/discuz/upload/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[0]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[finndyApi]]></item>
+			<item id="identifier"><![CDATA[finndy]]></item>
+			<item id="description"><![CDATA[finndy]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[发源地发布接口]]></item>
+			<item id="copyright"><![CDATA[finndy]]></item>
+			<item id="modules"><![CDATA[a:0:{}]]></item>
+			<item id="version"><![CDATA[1.1]]></item>
+		</item>
+		<item id="version"><![CDATA[X3.2]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[验证]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[finndy_token]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[管理员帐号]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[discuz_account]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[管理员密码]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[discuz_password]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[问题]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[discuz_question]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[0 = 无安全提问
+1 = 母亲的名字
+2 = 爷爷的名字
+3 = 父亲出生的城市
+4 = 您其中一位老师的名字
+5 = 您个人计算机的型号
+6 = 您最喜欢的餐馆名称
+7 ＝ 驾驶执照最后四位数字]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[答案]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[discuz_answer]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+	</item>
+</root>

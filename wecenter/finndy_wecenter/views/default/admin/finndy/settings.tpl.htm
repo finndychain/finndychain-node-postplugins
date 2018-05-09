@@ -1,0 +1,74 @@
+<?php TPL::output('admin/global/header.tpl.htm'); ?>
+<?php TPL::output('admin/global/nav_menu.tpl.htm'); ?>
+<style>
+
+    .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    padding: 0px 8px;
+    vertical-align: top;
+    height:70px;
+    line-height: 70px;
+    border-top: 1px solid #ddd;
+    }
+    .table-setting-tr {
+        vertical-align: middle;
+    }
+
+    .setting-value {
+        display: inline-flex;
+        vertical-align: middle;
+    }
+    .tutorial-link {
+        color: #428bca;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+</style>
+<div class="aw-content-wrap">
+    <div class="mod">
+        
+        <div class="tab-content mod-content" style='padding: 0px 20px;'>
+            <form action="admin/finndy/ajax_finndy/" method="post" id="config_form">
+                <table class="table" cellspacing='0' cellpadding='0'>
+                    <tbody>
+                       
+                        <tr class='table-setting-tr'>
+                            <td style="font-size: 14px;color:#333333;">发布网址</td>
+                            <td>
+                                <div class="setting-value">
+                                <span style="width:500px;padding-left:5px;"><?php _e($this->basic_web_address);?></span>
+                                
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class='table-setting-tr'>
+                            <td style="font-size: 14px;color:#333333;">发布密码</td>
+                            <td>
+                                <div class="setting-value">
+                                    <input type="text" name="finndy_password" value="<?php _e($this->finndy_config['finndy_password']);?>" style="width:500px;margin: 20px 0px 0px 0px;height: 30px;line-height: 30px;padding-left: 5px;" />
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">
+                                <div style="width: 260px;margin-left: auto;margin-right: auto;">
+                                   
+                                    <input type="button" value="<?php _e('保存设置'); ?>" class="btn btn-primary" style="background-color:#428bca;" onclick="AWS.ajax_post($('#config_form'), function (type, result) {
+                                                AWS.alert(result.err);
+                                                if (result.errno == -1) {
+                                                    $('#proxy-url').val(result.rsm);
+                                                }
+                                            });" />
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+<?php TPL::output('admin/global/footer.tpl.htm'); ?>
