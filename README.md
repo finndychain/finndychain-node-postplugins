@@ -1,6 +1,6 @@
 ## 使用说明 
 - 外层文件夹为分类。使用的话请使用对应分类里面的内容
--  [使用说明](http://help.finndy.com/index.php?qa=questions&qa_1=activity&qa_1=%E5%BC%80-%E5%8F%91-%E6%96%87-%E6%A1%A3)
+-  [使用文档](http://help.finndy.com/index.php?qa=questions&qa_1=activity&qa_1=%E5%BC%80-%E5%8F%91-%E6%96%87-%E6%A1%A3)
 -  插件包含 wordpress,phpwind,discuz,wecenter,dede
 -  注：发布插件来源平台第三方开发者用户贡献，官方已验证。
 
